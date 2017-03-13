@@ -1,8 +1,6 @@
 package com.base.qinxd.library.image;
 
-import android.app.Activity;
 import android.content.Context;
-import android.support.v4.app.FragmentActivity;
 import android.widget.ImageView;
 
 /**
@@ -23,10 +21,6 @@ public interface ImageLoaderWrapper {
     String NETWORK = "http";
 
     ImageLoaderWrapper with(Context context);
-
-    ImageLoaderWrapper with(Activity activity);
-
-    ImageLoaderWrapper with(FragmentActivity activity);
 
     /**
      * 显示图片

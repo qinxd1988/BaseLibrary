@@ -1,11 +1,9 @@
 package com.base.qinxd.library.image;
 
 import android.animation.ObjectAnimator;
-import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
-import android.support.v4.app.FragmentActivity;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
@@ -63,28 +61,6 @@ public class GlideImageLoader implements ImageLoaderWrapper {
         mGlide = Glide.get(context);
 
         manager = Glide.with(context);
-
-        return this;
-
-    }
-
-    @Override
-    public ImageLoaderWrapper with(Activity activity) {
-
-        mGlide = Glide.get(activity);
-
-        manager = Glide.with(activity);
-
-        return this;
-
-    }
-
-    @Override
-    public ImageLoaderWrapper with(FragmentActivity activity) {
-
-        mGlide = Glide.get(activity);
-
-        manager = Glide.with(activity);
 
         return this;
 
